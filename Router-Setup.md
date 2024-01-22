@@ -63,7 +63,14 @@
 ### Setup Access List
 #### 1. > ip access-list standard 1
 #### 2. > permit 192.168.125.0 0.0.0.255
-#### 3. < exit
+#### 3. > exit
 
-#### ip nat inside source list 1 int g0/0 overload
+#### > ip nat inside source list 1 int g0/0 overload
+#### > end
 # Configuration now completed. Try connecting devices
+
+
+### Rename router and set password
+#### 1. > conf t
+#### 2. > hostname RouterNameHere
+#### 3. > enable secret InsertPasswordHere
