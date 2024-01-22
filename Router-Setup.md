@@ -46,18 +46,18 @@
 
 ### Setup Default Router
 #### 1. > default-router 192.168.125.1
-##### Makes the cisco router the default
+##### Makes the cisco router the default  
 
 ### DNS Server Selection
-#### 1. > dns-server 8.8.8.8
+#### 1. > dns-server 8.8.8.8  
 
-#### > exit
+#### > exit  
 
 ## Setup fixed ip addresses
 #### 1. > ip dhcp excluded-address XXX.XXX.XXX.XXX
 ##### Replace X's with ip address you have or plan to have devices be fixed on.
 ##### Also recommended to exclude the first 10 ip adresses so DHCP will not mess with these. > ip dchp xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx
-##### Replace x's with your first ip adress in the sequence and the last, of the list you want to exclude.
+##### Replace x's with your first ip adress in the sequence and the last, of the list you want to exclude.  
 
 
 ### Setup Access List
@@ -67,10 +67,17 @@
 
 #### > ip nat inside source list 1 int g0/0 overload
 #### > end
-# Configuration now completed. Try connecting devices
+# Configuration now completed. Try connecting devices  
 
 
 ### Rename router and set password
 #### 1. > conf t
 #### 2. > hostname RouterNameHere
-#### 3. > enable secret InsertPasswordHere
+#### 3. > enable secret InsertPasswordHere  
+
+### Testing: Try pinging your ISP router, Google, or some other IP on the web
+#### Google: > ping 8.8.8.8  
+#### Try surfing the internet from a downstream device
+
+
+
