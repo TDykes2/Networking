@@ -67,7 +67,6 @@
 
 #### > ip nat inside source list 1 int g0/0 overload
 #### > end
-# Configuration now completed. Try connecting devices  
 
 
 ### Rename router and set password
@@ -75,6 +74,7 @@
 #### 2. > hostname RouterNameHere
 #### 3. > enable secret InsertPasswordHere  
 
+# Configuration now completed.  
 ### Testing: Try pinging your ISP router, Google, or some other IP on the web
 #### Google: > ping 8.8.8.8  
 #### Try surfing the internet from a downstream device
